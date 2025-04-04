@@ -90,7 +90,13 @@ public class Teachers {
 
         String[] LanguageTeachers = {
                 "Ms. Ana Aguirre", "Ms. Michelle Albano", "Ms. Luz Rocio Cely", "Ms. Yan Chen",
-                "Ms. Katherine Cook", "Mr. Mario Costa", "Mr. Adrian Davila", "Ms. Alessandra De Meo"
+                "Ms. Katherine Cook", "Mr. Mario Costa", "Mr. Adrian Davila", "Ms. Alessandra De Meo", 
+                "Ms. Maria Jose Entrena", "Ms. Eika Gervasi", "Ms. Raquel Hornero", "Mr. Joshua Hurd",
+                "Ms. Rita Iniguez", "Ms. Erhhan Kao", "Mr. Joon Keum", "Mr. Randy Levadas", "Ms. Hoi Sha Li",
+                "Ms. Jiazi Lin", "Ms. Valerie Mitchell", "Ms. Juana Nava", "Mr. Cristobal Petersen", 
+                "Ms. Pierrelyne Pierre", "Ms. Lin Rao", "Ms. Chung‑Chi Sha", "Mr. Jean‑Paul Torres",
+                "Ms. Nancy Villalba", "Ms. Ioana Wicker", "Ms. Xiaohong Wu", "Ms. Peihong Ye "
+
         };
 
         int deptID = 1;
