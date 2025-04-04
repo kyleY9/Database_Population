@@ -80,12 +80,27 @@ public class Teachers {
                 "Ms. Rosy Castillo", "Mr. William Cheung", "Ms. Marisa Cirino", "Mr. Vincent Dennie",
                 "Mr. Jake DiVeronica", "Ms. Jennie Ferry", "Mr. Joshua Fine", "Mr. Joshua Frost",
                 "Ms. Elina Galperin", "Ms. Rachel Germany", "Mr. Dave Gilmore", "Mr. Mark Heh",
-                "Mr. Evan Hereshinson", "Mr. Tahan Izzat", "Dr. Judith Jeremie", "Ms. Elizabeth Johnson"
+                "Mr. Evan Hereshinson", "Mr. Tahan Izzat", "Dr. Judith Jeremie", "Ms. Elizabeth Johnson",
+                "Ms. Rachel Kaplan", "Mr. Mark Keller", "Mr. Keith Kilgore", "Ms. Orli Kleiner",
+                "Mr. Jonathan Leaf", "Mrs. Robin Levitt (Scherman)", "Mr. Xu Li", "Mr. Jeffrey Locke",
+                "Ms. Amy Lucisano", "Dr. Matthew Maclean", "Mr. Andrew Macvicar", "Mrs. Beth Malchiodi",
+                "Mrs. Jacqueline Manduley", "Mr. Josidalgo Martinez", "Mr. Francis Mayle",
+                "Mr. Sean McManamon", "Ms. Victoria Meyer", "Mr. Harry Misirlakis", "Amani Mohamed",
+                "Ms. Kathleen Nadel", "Mr. Michael O'Shea," "Mr. Jeffrey Park", "Mr. Isaiah Pratt",
+                "Ms. I Ramnath", "Ms. Monica Robinson‑Bynum", "Mr. David Schepard", "Mr. Peter Schmidt‑Nowara",
+                "Ms. Samantha Schoeller", "Mr. Joshua Silverman", "Mr. Elijah Singh", "Mr. Stephen Stavola",
+                "Mr. Richard Stein", "Mr. Adam Stevens", "Mr. Will Treece", "Mr. Luis Vergara", 
+                "Mr. Thomas Wentworth", "Ms. Rachel Worrell", "Ms. Maria Zagoreos"
+
         };
 
         String[] ArtsTeachers = {
                 "Mr. Barrington Bigsby", "Mr. Steve Coyle", "Mrs. Patricia DePinto", "Mr. Richard Depinto",
-                "Ms. Connie Eng", "Mr. Michael Fisher", "Mr. Park K Fung", "Mr. Yesid Gonzalez"
+                "Ms. Connie Eng", "Mr. Michael Fisher", "Mr. Park K Fung", "Mr. Yesid Gonzalez", 
+                "Mr. Michael Guldal", "Mr. Sidney Izakson", "Mr. Rudy M", "Ms. Katherine Minkoff",
+                "Ms. Basia Revi", "Mr. Evan Schwartz", "Rich Singler", "Mr. Alexander Tasopoulos",
+                "Mr. Garfield Taylor", "Mr. Richard Wanliss", "Mr. Doug Weiner", "Mr. Deshawn Withers"
+
         };
 
         String[] LanguageTeachers = {
