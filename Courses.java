@@ -46,7 +46,7 @@ public class Courses {
                 "Common Core Algebra", "Common Core Geometry", "Common Core Algebra II",
                 "Pre-Calculus", "Calculus (non-AP)", "Multivariable Calculus", "Math Research", "Linear Algebra",
                 "9th Grade Global", "Participation in Government", "Economics",
-                "Sociology", "Cultural Anthropology", "Physical Anthropology",
+                "Sociology", "Cultural Anthropology", "Physical Anthropology", "Black History 365",
                 "Architecture", "Adobe Digital Video", "Adobe Visual Design",
                 "Architectural Drawing w/CAD", "Digital Animation", "Industrial Design",
                 "Media", "Music", "PLTW CEA", "PLTW DDP (9th Grade)"
