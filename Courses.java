@@ -1,8 +1,7 @@
 public class Courses {
     private static int primaryKey = 1;
 
-    public static void main(String[] args) {
-        // AP Classes
+    public static void generateCourses() {
         String[] apClasses = {
                 "AP Biology", "AP Environmental", "AP Psychology", "AP Chemistry",
                 "AP Physics I", "AP Physics II", "AP Physics C (Mechanics)", "AP Physics C (E/M)",
@@ -25,10 +24,10 @@ public class Courses {
                 "Regents Physics", "Regents Physics Lab",
                 "10th Grade Regents Global History", "11th Grade Regents American History",
                 "Regents 11th Grade American Literature",
-                "Chinese I", "Chinese II", "Chinese III", 
-                "French I", "French II", "French III", 
-                "German I", "German II", "German III", 
-                "Italian I", "Italian II", "Italian III", 
+                "Chinese I", "Chinese II", "Chinese III",
+                "French I", "French II", "French III",
+                "German I", "German II", "German III",
+                "Italian I", "Italian II", "Italian III",
                 "Spanish I", "Spanish II", "Spanish III", "Spanish IV - Pre-AP"
         };
 
@@ -39,7 +38,7 @@ public class Courses {
                 "Astronomy", "Modern Physics",
                 "Big Data: Warehousing & Analytics", "Cyber Security", "Digital Electronics (Project Lead the Way)",
                 "Digital Systems Design", "Fundamentals of IT Infrastructure", "Green Building Construction", "PLTW Engineering Design & Development (EDD)",
-                "Introduction to Chemical Engineering", "Engineering Statistics", "American Concrete Institute Certification", 
+                "Introduction to Chemical Engineering", "Engineering Statistics", "American Concrete Institute Certification",
                 "Land Surveying Certification", "AutoCAD with Certiport Certification", "PLTW Computer Integrated Manufacturing (CIM)",
                 "PLTW Environmental Sustainability", "Principles of Accounting",
                 "9th Grade Freshman Composition", "10th Grade British & World Literature",
@@ -48,7 +47,7 @@ public class Courses {
                 "12th Grade: Science Fiction & Fantasy", "12th Grade: Yearbook",
                 "Elective: The Survey (Tech's Student Newspaper)",
                 "Badminton", "Basketball", "Floor Hockey", "Golf", "Handball", "Volleyball", "Tennis", "Wiffle Ball",
-                "Indoor Soccer", "Speedball", "Team Handball", "Weight Training", "Advanced Weight Training", 
+                "Indoor Soccer", "Speedball", "Team Handball", "Weight Training", "Advanced Weight Training",
                 "Backyard Games", "Capoiera", "Spin", "Swimming", "Indoor Track", "Outdoor Track", "Yoga", "Health",
                 "Common Core Algebra", "Common Core Geometry", "Common Core Algebra II",
                 "Pre-Calculus", "Calculus (non-AP)", "Multivariable Calculus", "Math Research", "Linear Algebra",
@@ -58,7 +57,6 @@ public class Courses {
                 "Architectural Drawing w/CAD", "Digital Animation",
                 "Music", "PLTW CEA", "PLTW DDP (9th Grade)"
         };
-
 
         System.out.println("<------ AP CLASSES ------>");
         printCourses(apClasses, 1);
@@ -82,5 +80,9 @@ public class Courses {
             System.out.println("INSERT INTO Courses (course_id, course, type_id) VALUES (" + primaryKey + ", '" + item + "', " + typeID + ");");
             primaryKey++;
         }
+    }
+
+    public static int getPrimaryKey() {
+        return primaryKey;
     }
 }

@@ -1,5 +1,5 @@
 public class Departments {
-    public static void main(String[] args) {
+    public static void generateDepartments() {
         String[] departments = {"Biology", "Chemistry", "CTE, Computer Science & Engineering", "English", "Health & PE",
                 "Mathematics", "Physics", "Social Studies", "Visual & Performing Arts", "World Languages & ENL"};
 
