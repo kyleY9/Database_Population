@@ -4,5 +4,9 @@ public class Main {
         Teachers.generateTeachers();
         Courses.generateCourses();
         Course_Offerings.generateCourseOfferings();
+        Students.generateStudents();
+
+        System.out.println("\n\n ROSTERS");
+        Rosters.generateRosters();
     }
 }
