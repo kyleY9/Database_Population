@@ -5,22 +5,28 @@ public class Rosters {
 
     public static Map<Integer, Integer> courseOfferingPeriod = Course_Offerings.getCourseOfferingPeriod();
     // ^^ can only be used AFTER Course_Offerings is run
+    public static Map<Integer, Set<CourseSlot>> studentSchedule = new HashMap<>();
 
     public static void generateRosters() {
-        Map<Integer, Set<Integer>> studentSchedule = new HashMap<>();
         Map<Integer, Integer> courseOfferingStudents = new HashMap<>(); // will track how many students are in each course offering
 
-        for (int i = 1; i <= Students.getPrimaryKey(); i++) {
+        for (int i = 1; i <= Students.getPrimaryKey(); i++) { // Students.java must be run first for this to work
             studentSchedule.put(i, new HashSet<>());
             while (studentSchedule.get(i).size() < 10) { // we want every student to have periods 1-10 filed up
                 int courseOffering = (int) (Math.random() * Course_Offerings.getCourseOfferingId() - 1) + 1;
                 int period = courseOfferingPeriod.get(courseOffering);
                 courseOfferingStudents.putIfAbsent(courseOffering, 0); // create a key and a value for the # of students in the course_offering
 
-                boolean isStudentOccupied = studentSchedule.get(i).contains(period);
+                boolean isStudentOccupied = false;
+                for (CourseSlot slot : studentSchedule.get(i)) {
+                    if (slot.getPeriod() == period) {
+                        isStudentOccupied = true;
+                        break;
+                    }
+                }
 
                 if (courseOfferingStudents.get(courseOffering) < 100 && !isStudentOccupied) { // max # of students per class is 100. very realistic.
-                    studentSchedule.get(i).add(period);
+                    studentSchedule.get(i).add(new CourseSlot(period, courseOffering));
                     courseOfferingStudents.put(courseOffering, courseOfferingStudents.get(courseOffering) + 1);
                     System.out.printf("INSERT INTO Rosters (student_id, course_offering_id) VALUES (%d, %d);%n",
                             i, courseOffering
@@ -50,5 +56,9 @@ public class Rosters {
 //            }
 //            rosterId++;
 //        }
+    }
+
+    public static Map<Integer, Set<CourseSlot>> getStudentSchedule() {
+        return studentSchedule;
     }
 }

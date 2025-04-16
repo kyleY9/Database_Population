@@ -10,7 +10,7 @@ public class Rooms {
             for (int k = 0; k < 4; k++) {
                 for (int j = 0; j < 20; j++) {
                     String room = floor[i] + wing[k] + (j + 1);
-                    System.out.println("INSERT INTO Rooms (room_id, room) VALUES (" + primaryKey + ", " + room + ");");
+                    System.out.println("INSERT INTO Rooms (room_id, room) VALUES (" + primaryKey + ", '" + room + "');");
                     primaryKey++;
                 }
             }

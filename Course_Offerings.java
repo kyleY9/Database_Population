@@ -38,8 +38,8 @@ public class Course_Offerings {
             for (int i = 0; i < numOfferings; i++) {
                 boolean assigned = false;
 
-                // Give up after 200 tries just in case there is no possible combination of room, teacher, and period (will output error message afterwards)
-                for (int attempt = 0; attempt < 200 && !assigned; attempt++) {
+                // Give up after 500 tries just in case there is no possible combination of room, teacher, and period (will output error message afterwards)
+                for (int attempt = 0; attempt < 500 && !assigned; attempt++) {
                     int period = (int) (Math.random() * 10 ) + 1; // period 1-10
                     int teacherId = teacherIds.get((int) (Math.random() * teacherIds.size())); // Keep trying to find a teacher and room id that match
                     int roomId = roomIds.get((int) (Math.random() * roomIds.size()));
@@ -71,9 +71,9 @@ public class Course_Offerings {
                     }
                 }
 
-                if (!assigned) {
-                    System.err.println("Could not assign a valid offering for course ID " + courseId);
-                }
+//                if (!assigned) {
+//                    System.err.println("Could not assign a valid offering for course ID " + courseId);
+//                }
             }
         }
     }

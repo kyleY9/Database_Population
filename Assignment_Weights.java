@@ -1,6 +1,6 @@
 public class Assignment_Weights {
-    public static void generateCourseWeights() {
-        String[] assignment_weight = {"Major", "Minor"};
+    public static void generateAssignmentWeights() {
+        String[] assignment_weight = {"Minor", "Major"};
 
         for(int p = 0; p< assignment_weight.length; p++){
             int index = p+1;
