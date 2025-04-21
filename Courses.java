@@ -74,13 +74,13 @@ public class Courses {
                 "Virtual Enterprise"
         };
 
-        System.out.println("<------ AP CLASSES ------>");
+        // System.out.println("<------ AP CLASSES ------>");
         printCourses(apClasses, 1);
 
-        System.out.println("\n<------ REGENTS CLASSES ------>");
+        // System.out.println("\n<------ REGENTS CLASSES ------>");
         printCourses(regentsClasses, 2);
 
-        System.out.println("\n<------ ELECTIVE CLASSES ------>");
+        // System.out.println("\n<------ ELECTIVE CLASSES ------>");
         printCourses(electives, 3);
     }
 
