@@ -63,7 +63,7 @@ public class Courses {
                 "French I", "French II",
                 "German I", "German II",
                 "Italian I", "Italian II",
-                "Spanish I", "Spanish II",
+                "Spanish I", "Spanish II", "Spanish IV - Pre-AP",
                 "Basic Strings", "Beginning Musicianship & Chorus", "Collaborative Piano/Choral Accompaniment",
                 "Concert Band", "Concert Choir", "Intermediate Orchestra", "Jazz Band", "Junior Band", "Orchestra",
                 "String Orchestra", "Symphonic Band", "Treble Choir", "Tech Chorale",
