@@ -1,3 +1,15 @@
+DROP TABLE Grades;
+DROP TABLE Assignments;
+DROP TABLE Rosters;
+DROP TABLE Course_Offerings;
+DROP TABLE Courses;
+DROP TABLE Teachers;
+DROP TABLE Assignment_Weights;
+DROP TABLE Rooms;
+DROP TABLE Course_Types;
+DROP TABLE Departments;
+DROP TABLE Students;
+
 CREATE TABLE Students (
         student_id integer PRIMARY KEY,
         student_name varchar(255)
